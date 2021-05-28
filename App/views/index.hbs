@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caique Ramos - ToDoApp</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+    <body>
+        <div class="cont">
+            <div class="form sign-in">
+                <h2>Bem vindo</h2>
+                <label>
+                    <span>Email</span>
+                    <input type="email" />
+                </label>
+                <label>
+                    <span>Senha</span>
+                    <input type="password" />
+                </label>
+                <p class="forgot-pass">Esqueceu sua senha?</p>
+                <button type="button" class="submit">Entrar</button>
+                <button type="button" class="fb-btn">Conectar com <span>facebook</span></button>
+            </div>
+            <div class="sub-cont">
+                <div class="img">
+                    <div class="img__text m--up">
+                        <h2>Novo Aqui?</h2>
+                        <p>Entre e tenha controle do seu dia!</p>
+                    </div>
+                    <div class="img__text m--in">
+                        <h2>Ja Faz parte?</h2>
+                        <p>Vem ser feliz!</p>
+                    </div>
+                    <div class="img__btn" onClick={ActiveEfect} >
+                        <span class="m--up">Criar</span>
+                        <span class="m--in">Logar</span>
+                    </div>
+                </div>
+                <div class="form sign-up">
+                    <h2>Ta na Hora de facilitar Seu dia</h2>
+                    <label>
+                        <span>Nome</span>
+                        <input type="text" />
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" />
+                    </label>
+                    <label>
+                        <span>Senha</span>
+                        <input type="password" />
+                    </label>
+                    <button type="button" class="submit">Pronto</button>
+                    <button type="button" class="fb-btn">Entrar com <span>facebook</span></button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
+</html>
